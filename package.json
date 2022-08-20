@@ -1,0 +1,13 @@
+{
+  "name": "random-numbers",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "exec": "node src/index.js",
+    "test": "node src/review/test.js",
+    "dist": "node src/review/mesureDistributionBalance.js",
+    "perf": "node src/review/mesurePerformance.js"
+  },
+  "author": "Dima Nahorny",
+  "license": "ISC"
+}
