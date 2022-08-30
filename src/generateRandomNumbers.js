@@ -20,8 +20,18 @@ export default function generateRandomNumbers(length) {
     // memory allocation for Array with N elements
     const nums = Array(length);
 
+    // To fix distribution balance
+    // I added iterations direction random
+    // 0...N or N...0
+    let s = 0, f = length, d = 1;
+    if (Math.random() > 0.5) {
+        s = length - 1; // i start
+        f = -1;         // i finish
+        d = -1;         // direction
+    }
+
     // Single path while every array cell
-    for(let i = 0; i < length; i++) {
+    for(let i = s; i !== f; i += d) {
         // If cell is not empty - skip random call.
         if (nums[i] !== undefined) {
             continue;

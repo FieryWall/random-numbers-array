@@ -17,7 +17,7 @@ Performance compare with classic algorithm
 ```sh
 npm run perf
 ```
-Distribution balance check
+Distribution balance check (displays offset from mediane)
 ```sh
 npm run dist
 ```
